@@ -16,4 +16,16 @@ public class App {
     public String getMessage() {
         return MESSAGE;
     }
+
+    public String greet(String name) {
+        if (name == null || name.isBlank()) {
+            return "Hello Stranger!";
+        }
+        return "Hello " + name + "!";
+    }
+
+    public int add(int a, int b) {
+        return a + b;
+    }
+
 }

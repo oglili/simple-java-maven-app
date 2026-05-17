@@ -22,4 +22,22 @@ public class AppTest
         App app = new App();
         assertEquals("Hello World!", app.getMessage());
     }
+
+    @Test
+    public void testGreetWithName() {
+        App app = new App();
+        assertEquals("Hello John!", app.greet("John"));
+    }
+
+    @Test
+    public void testGreetWithEmptyName() {
+        App app = new App();
+        assertEquals("Hello Stranger!", app.greet(""));
+    }
+
+    @Test
+    public void testAdd() {
+        App app = new App();
+        assertEquals(5, app.add(2, 3));
+    }
 }
